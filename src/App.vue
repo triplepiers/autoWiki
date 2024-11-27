@@ -31,7 +31,7 @@ export default {
   <Menu />
 
   <!-- Header -->
-  <Header :content="this.header" />
+  <Header :content="header" />
 
   <!-- Page Content -->
   <div class="container">

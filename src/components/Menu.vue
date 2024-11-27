@@ -19,6 +19,14 @@ import { RouterLink } from 'vue-router'
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto left-aligned">
 
+                    <!---- TEST ---->
+                    <li class="nav-item">
+                        <RouterLink to="/test" class="nav-link"
+                            style="color:orange;">
+                            Test
+                        </RouterLink>
+                    </li>
+
                     <!---- HOME ---->
                     <li class="nav-item">
                         <RouterLink to="/" class="nav-link">Home</RouterLink>

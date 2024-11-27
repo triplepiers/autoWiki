@@ -4,6 +4,9 @@ import './assets/base.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.js'
 
+// highlightJS CSS（这里可以选其他的样式）
+import 'highlight.js/styles/obsidian.css'
+
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'

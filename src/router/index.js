@@ -107,6 +107,11 @@ const router = createRouter({
       name: 'sustainable',
       component: () => import('../views/awards/SustainableView.vue')
     },
+    {
+      path: '/test',
+      name: 'test',
+      component: () => import('../views/TestView.vue')
+    }
   ],
 })
 
