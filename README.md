@@ -73,9 +73,34 @@
     └── views
         └── HomeView.vue  # 一个 View 对应一个页面
 ```
+## 支持功能
+
+- Bootstrap：没啥好说的，反正是官方模版自带的
+
+    个人感觉自适应不是很好用？有空的话可以缝一个 TailWindCSS
+
+- Markdown-it + HighlightJS + Katex
+
+    支持从 MarkDown 文本渲染到 Wiki 页面
+
+    - 需要改 HighlightJS 样式的话，请去 `main.js` 里修改导入的样式表
+    - 支持 Katex 公式渲染，对应的样式表引用在 `index.html`
+
+        ⚠️ 并非本地资源，搞 iGEM 的时候需要和附加字体一起下载
+
+    - Wiki 本身的版式请在 `MkDown.vue` 组件里撰写，CSS 选择器前面记得加 `/deep/`
 
 ## Todo List
+- 自动生成目录、自动文本编号
+- 自动生成滚动条
 - 增加自动打包脚本
 - 增加 Table 支持
 - 缝合 igem uploader 实现自动上传
+- 基于 transition 组件的页面切换逻辑
 
+    Ref: https://blog.csdn.net/m0_55119483/article/details/130289370
+
+- 图片轮播展示组件（比如 EleUI/AntUI）
+
+## Error
+- Katex 无法解析 markdown HTML 标签内的 inline

@@ -1,6 +1,8 @@
 <script>
 import MarkdownIt from 'markdown-it';
 import hljs from 'highlight.js';
+import mk from 'markdown-it-katex';
+
 export default {
     data() {
         // 这里有一些自定义输出规则的样例
@@ -21,6 +23,8 @@ export default {
         }
     },
     mounted() {
+        // 加载 katex 插件以支持对 Latex 公式的渲染
+        this.markdownRenderer.use(mk);
         // 插入渲染后的 MarkDown 文本
         this.$refs.container.innerHTML = this.markdownRenderer.render(this.content);
         // 高亮代码块
@@ -35,7 +39,7 @@ export default {
 
 <style scoped>
 /* 这里的选择器前面得加 /deep/ */
-/deep/ h1 {
-    color: red;
+/deep/ p {
+    text-indent: 2em;
 }
 </style>
