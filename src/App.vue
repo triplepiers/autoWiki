@@ -45,4 +45,8 @@ export default {
   <Footer />
 </template>
 
-<style scoped></style>
+<style scoped>
+.container {
+  position: relative;
+}
+</style>

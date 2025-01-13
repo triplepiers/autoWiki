@@ -1,7 +1,14 @@
 /* aka style.css from default template */
+:root {
+    --nav-height: 56px;
+}
+
+html {
+    scroll-padding-top: calc(var(--nav-height) + 5px);
+}
 
 body {
-    padding-top: 56px;
+    padding-top: var(--nav-height);
     width: 100vw;
     min-height: 100vh;
 }

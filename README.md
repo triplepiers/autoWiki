@@ -83,15 +83,22 @@
 
     支持从 MarkDown 文本渲染到 Wiki 页面
 
-    - 需要改 HighlightJS 样式的话，请去 `main.js` 里修改导入的样式表
-    - 支持 Katex 公式渲染，对应的样式表引用在 `index.html`
+    支持自动生成可跳转的文章目录
 
-        ⚠️ 并非本地资源，搞 iGEM 的时候需要和附加字体一起下载
+    支持 Katex 公式渲染，对应的样式表引用在 `index.html`
+
+    > ⚠️ 并非本地资源，搞 iGEM 的时候需要和附加字体一起下载
+
+    - 需要改 HighlightJS 样式的话，请去 `main.js` 里修改导入的样式表
+   
 
     - Wiki 本身的版式请在 `MkDown.vue` 组件里撰写，CSS 选择器前面记得加 `/deep/`
 
 ## Todo List
-- 自动生成目录、自动文本编号
+- 自动生成目录高亮
+
+    https://blog.csdn.net/weixin_47554687/article/details/127101051
+
 - 自动生成滚动条
 - 增加自动打包脚本
 - 增加 Table 支持
